@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #nombre
+        {
+            margin-top: 3px;
+            margin-left: 0px;
+            margin-bottom: 3px;
+        }
+
+        #correo
+        {
+           margin-left: 0.5px;
+           margin-bottom: 3px;
+        }
+
+        #estudiante
+        {
+            margin-left: 0px;
+            margin-bottom: 3px;
+        }
+
+        #edad
+        {
+            margin-left: 0px;
+            margin-bottom: 3px;
+        }
+
+        #pais
+        {
+            margin-left: 0px;
+            margin-bottom: 3px;
+        }
+
+        #laboral
+        {
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+
+        #bottom
+        {
+            margin: 10px;
+        }
+
+
+        .space
+        {
+            margin-right: 87px;
+        }
+
+        .space3
+        {
+            margin-right: 35px;
+        }
+
+        .space4
+        {
+            margin-right: 5px;
+        }
+
+        .country 
+        {
+            margin: 0px;
+        } 
+
+
+
+
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2.6</title>
+</head>
+<body>
+    <h1> FORMULARIO PERFIL USUARIO </h1>
+    <fieldset> 
+        <legend> FORMULARIO DATOS PERSONALES </legend>
+
+        <div id="estudiante">
+            <input type="text" name="name" placeholder="Estudiante" id="name" readonly size="180px"/>
+        </div>
+
+        <div id="nombre">
+        <label for="name"> Nombre y apellido </label>
+        <input type="text" name="name" placeholder="Nombre y apellido" id="name"/>
+        </div>
+
+        <div id="correo">
+        <label for="mail" class="space2"> Correo electronico </label>
+        <input type="text" name="mail" placeholder="Correo electronico" id="mail"/>
+        </div>
+
+        <div id="edad">
+        <label for="age" class="space"> Edad </label>
+        <input type="number" name="age" placeholder="Edad" id="age"/>
+        </div>
+
+        <div id="pais">
+        <label for="country" class="space3">Nacionalidad</label>
+        <select name="country" id="country">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+        </select>
+        </div>   
+
+        <div id="laboral">
+            <label for="empleo" class="space4">Condicion laboral</label>
+            <select name="empleo" id="empleo">
+                <option value="Desempleado"> Desempleado </option>
+                <option value="Busqueda">En busqueda laboral</option>
+                <option value="PartTime">Trabajo Part-time</option>
+                <option value="FullTime">Trabajo Full-time</option>
+            </select>
+            </div>   
+
+                <fieldset> 
+                <legend>GUSTOS PERSONALES</legend>
+                    <div id="nombre">
+                        <label for="music"> Musica favorita </label>
+                        <input type="text" name="music" placeholder="Ingrese sus gustos musicales" id="music" size="175px"/>
+                    </div>
+
+                    <div id="laboral">
+                        <label for="food" class="space5">Comida favorita</label>
+                        <select name="food" id="food">
+                            <option value="Pizza"> Pizza </option>
+                            <option value="Hamburguesas">Hamburguesas</option>
+                            <option value="Fideos">Fideos con salsa</option>
+                            <option value="Ensalada">Ensalada</option>
+                        </select>
+                        </div>
+                </fieldset>
+
+        <div id="bottom">
+        <label for="recordar"> Recordar </label>
+        <input type="checkbox" name="recordar" id="recordar">
+        <input type="submit" value="Enviar">
+        </div>
+
+    </fieldset>
+</body>
+
+</html>
